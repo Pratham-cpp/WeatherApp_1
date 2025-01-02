@@ -1,0 +1,182 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: "Inter", serif;
+}
+.wrapper{
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(125deg, rgb(4, 45, 77), rgb(7, 113, 130));
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.heading{
+    font-size: 3rem;
+    font-weight: 800;
+    text-align: center;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbtn{
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.3rem;
+    margin: 1rem 0;
+    scale: 1;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+.navbtn:hover{
+    background-color: rgb(73, 100, 121);
+}
+.currenttab{
+    background-color: rgb(178, 178, 178);
+    scale: 1.1;
+}
+.searchsection{
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scale: 1;
+}
+.searchbox{
+    appearance: none;
+    height: 2rem;
+    width: 17rem;
+    background-color: rgb(178, 178, 178);
+    color: white;
+    font-weight: 700;
+    font-size: 1.3rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    outline: none;
+    border: none;
+}
+.hide{
+    visibility: hidden;
+}
+.active{
+    visibility: visible;
+}
+.searchbox::placeholder{
+ color: rgb(219, 219, 219);   
+}
+.fa-magnifying-glass{
+    margin-left: 1rem;
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    border: 3px solid white;
+    border-radius: 50%;
+    transition: background-color 0.4s ease ;
+    transition: color 0.4s ease
+}
+.fa-magnifying-glass:hover{
+    background-color: white;
+    color: black;
+}
+.weathersec{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* scale: 0; */
+}
+.citysec{
+    display: flex;
+    margin: 1rem;
+}
+.city{
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+.flgimage{
+    margin-left: 1rem;
+    width: 2rem;
+}
+.weathertext{
+    size: 1.6rem;
+    font-weight: 500;
+}
+.weathericon{
+    width: 6rem;
+}
+.temp{
+    font-size: 2rem;
+    font-weight: 800;
+}
+.cards{
+    display: flex;
+}
+.card{
+    background-color: rgb(178, 178, 178);
+    height: 12rem;
+    width: 12rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 5px 3px rgb(12, 66, 107);
+}
+.cardimg{
+    width: 3rem;
+    margin-top: 1rem;
+}
+.cardtxt{
+    font-weight: 600;
+    padding: 1rem;
+}
+.grantlocsec{
+    position: fixed;
+    top: 12rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.locaccesstext{
+    font-size: 1.4rem;
+    font-weight: 500;
+    padding: 1.3rem;
+}
+.grantbtn{
+    background-color: rgb(99, 171, 57);
+    font-size: 2rem;
+    padding: 0.7rem;
+    outline: none;
+    border: none;
+    font-weight: 900;
+    border-radius: 0.5rem;
+    transition: box-shadow 0.2s ease-in-out ;
+    transition: scale 0.2s ease-in-out ;
+}
+.grantbtn:hover{
+    box-shadow: 0 0 3px 3px rgb(194, 255, 200);
+    scale: 1.01;
+}
+.loadingcontainer{
+    position: fixed;
+    top: 13rem;
+}
+.locimage{
+    width: 15rem;
+}
+.loadingimg{
+    width: 23rem;
+}
+.error404{
+    width: 25rem;
+    position:fixed;
+    top: 15rem;
+}
